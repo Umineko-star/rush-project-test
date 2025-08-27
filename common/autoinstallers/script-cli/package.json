@@ -1,0 +1,11 @@
+{
+  "name": "script-cli",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "shelljs": "^0.10.0",
+    "npm-cli-login":"1.0.0",
+    "inquirer": "^8.2.0"
+  }
+}

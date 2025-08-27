@@ -1,0 +1,43 @@
+{
+  "name": "test-rush-core",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/main.cjs.cjs",
+  "module": "./dist/main.es.js",
+  "unpkg": "./dist/main.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "rm -rf ./dist & tsc && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/main.es.js",
+      "types": "./dist/types/main.d.ts",
+      "require": "./dist/main.cjs.cjs"
+    }
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.19.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.14.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.22.0",
+    "vite": "^6.1.0",
+    "vite-plugin-dts": "^4.0.1"
+  }
+}
